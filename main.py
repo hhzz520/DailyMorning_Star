@@ -19,9 +19,9 @@ def get_color():
 
 def get_access_token():
     # appId
-    app_id = wx34a100654ae7ac8c
+    app_id = config["app_id"]
     # appSecret
-    app_secret = 95c0d2e331231e1c7081cfe7e8d81a6b
+    app_secret = config["app_secret"]
     post_url = ("https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={}&secret={}"
                 .format(app_id, app_secret))
     try:
